@@ -30,21 +30,6 @@ public class LureThrow : MonoBehaviour
                 ThrowLure();
             }
         }
-
-        // Handle mouse input for testing in the Unity editor
-        #if UNITY_EDITOR
-        if (Input.GetMouseButtonDown(0))  // Left mouse button down
-        {
-            isTouching = true;
-            touchStartPos = Input.mousePosition;
-        }
-        else if (Input.GetMouseButtonUp(0) && isTouching)  // Left mouse button up
-        {
-            isTouching = false;
-            touchEndPos = Input.mousePosition;
-            ThrowLure();
-        }
-        #endif
     }
 
     void ThrowLure()
@@ -52,8 +37,8 @@ public class LureThrow : MonoBehaviour
         // Calculate swipe direction
         Vector3 swipeDirection = touchEndPos - touchStartPos;
 
-        // Convert to 3D space (we’ll ignore the Z-axis for now, and use swipe direction to influence the X and Y axes)
-        Vector3 throwDirection = new Vector3(swipeDirection.x, swipeDirection.y, swipeDirection.z).normalized;
+        // Convert to 3D space and use Z-axis for throwing
+        Vector3 throwDirection = new Vector3(0, swipeDirection.y, swipeDirection.x).normalized; // Only use Y-axis swipe to affect Z direction
 
         // Apply the force to throw the lure (you can attach this to a Rigidbody component)
         Rigidbody lureRb = lure.GetComponent<Rigidbody>();
