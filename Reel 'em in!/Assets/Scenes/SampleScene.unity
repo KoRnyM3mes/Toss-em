@@ -661,6 +661,7 @@ GameObject:
   - component: {fileID: 306345455}
   - component: {fileID: 306345454}
   - component: {fileID: 306345458}
+  - component: {fileID: 306345459}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Fish
@@ -793,6 +794,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &306345459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306345453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf52cbf957ef9b4292334d240ffb9e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lure: {fileID: 1616469987}
+  hookSpeed: 5
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &599033409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,6 +3997,7 @@ GameObject:
   - component: {fileID: 1116880172}
   - component: {fileID: 1116880171}
   - component: {fileID: 1116880173}
+  - component: {fileID: 1116880174}
   m_Layer: 0
   m_Name: geo1_output1_output1_0
   m_TagString: Untagged
@@ -4062,6 +4079,33 @@ TerrainCollider:
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 287845fa657e1014bb95348569c7886d, type: 2}
   m_EnableTreeColliders: 1
+--- !u!114 &1116880174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116880169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41fbce4f91ddb7e488c4fe77efd3b71f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 32970fc9aeae0004d8bfb8ec2196e2bc, type: 2}
+        m_TargetAssemblyTypeName: GameAction, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1495181818
 GameObject:
   m_ObjectHideFlags: 0
