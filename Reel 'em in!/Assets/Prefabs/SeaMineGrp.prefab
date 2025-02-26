@@ -201,7 +201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40564c57652e9174c9a7050e1a54019c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  minSpeed: 1
+  maxSpeed: 4
   pathType: 1
   pathPoints:
   - {fileID: 5111645517864593761}

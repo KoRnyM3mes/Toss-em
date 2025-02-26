@@ -9,7 +9,8 @@ public class PlatformController : MonoBehaviour
     }
 
     [Header("Platform Settings")]
-    public float speed = 2f;
+    public float minSpeed = 1f; // Minimum speed range
+    public float maxSpeed = 5f; // Maximum speed range
     public PathType pathType = PathType.Linear;
 
     [Header("Path Points")]
@@ -18,12 +19,16 @@ public class PlatformController : MonoBehaviour
     private int currentPointIndex = 0;
     private bool isMoving = false;
     private int direction = 1; // 1 for forward, -1 for backward
-
+    private float speed;
 
     void Start()
     {
+        // Assign a random speed between minSpeed and maxSpeed
+        speed = Random.Range(minSpeed, maxSpeed);
+
         StartMovement();
     }
+
     void Update()
     {
         if (isMoving && pathPoints.Length > 1)
