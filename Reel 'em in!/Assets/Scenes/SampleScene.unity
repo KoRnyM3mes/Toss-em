@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -344,9 +344,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1808671532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -269, y: 832}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 145, y: -64}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &207746775
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToMove: {fileID: 1616469986}
   moveForce: 3
-  zForce: 3
+  zForce: 10
 --- !u!114 &1616469995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,54 +1824,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 92994528}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1616469988}
-        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1616469989}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1616469994}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 246297841}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2235,7 +2187,7 @@ PrefabInstance:
     - target: {fileID: 6802984716210825703, guid: 07bd3dfd97c63a24886c21428bee8f4b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.81
+      value: 44.2
       objectReference: {fileID: 0}
     - target: {fileID: 6802984716210825703, guid: 07bd3dfd97c63a24886c21428bee8f4b,
         type: 3}
@@ -2245,7 +2197,7 @@ PrefabInstance:
     - target: {fileID: 6802984716210825703, guid: 07bd3dfd97c63a24886c21428bee8f4b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -54.66996
+      value: -43.4
       objectReference: {fileID: 0}
     - target: {fileID: 6802984716210825703, guid: 07bd3dfd97c63a24886c21428bee8f4b,
         type: 3}

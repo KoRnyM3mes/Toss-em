@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class HookedBehavior : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class HookedBehavior : MonoBehaviour
     public Vector3 offset; // Offset between the hooked object and the lure
     private Transform lure; // The lure to hook onto
     private bool isHooked = false;
+
+    public UnityEvent HookedEvent, UnhookedEvent;
 
     void Start()
     {
@@ -28,6 +31,7 @@ public class HookedBehavior : MonoBehaviour
     {
         // Assign random values to the x and z components of the offset while keeping the y component the same
         offset = new Vector3(Random.Range(-1f, 1f), offset.y, Random.Range(-1f, 1f));
+        HookedEvent.Invoke();
         isHooked = true;
     }
 
